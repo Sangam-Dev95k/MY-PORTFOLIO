@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-PORTFOLIO</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- ---------------------NAVBAR------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGE/PRSNL.LOGO.jpg" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Sangam</span> <br>Yadav From India</h1>
+            </div>
+        </div>
+    </div>
+<!--------------- ABOUT-SECTION--------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-call-1">
+                    <img src="IMAGE/USER.jpg">
+                </div>
+                <div class="about-call-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>“Hii, my name is <span>sangam Yadav</span>, and I’m a computer science major. 
+                        I have experience with several programming languages, including C, C++, 
+                        web Development, DSA, Python, and SQL.
+                        I’m particularly interested in artificial intelligence and machine learning, 
+                        and I’m currently working on a project that involves developing an AI-powered chatbot.
+                        Last semester, I worked on a team project that involved developing a 
+                        mobile app for tracking fitness goals. I learned a lot about software development 
+                        processes and project management during that experience.
+                        After graduation, I hope to work as a software engineer at a tech company, 
+                        where I can continue to develop my skills and contribute to innovative projects. 
+                        In my free time, I enjoy attending hackathons and learning about new technologies
+                        in the field.
+                    </p>
+                    <div class="tab-tittles">
+                        <p class="tab-links Active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents Active-tabs" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>Designer</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web App Development</li>
+                            <li><span>2021 - 2023</span><br>Web Development</li>
+                            <li><span>2019 - 2021</span><br>Intership at Amazon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>BCA From SU Madhubani</li> 
+                            <li><span>2020 - 2022</span><br>+2 Zila School Purnea</li>
+                            <li><span>2019 - 2020</span><br> Zila School purnea</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES-SECTION------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design refers to the design of websites that are displayed 
+                        on the internet. It usually refers to the user experience aspects
+                        of website development rather than software development. Web design 
+                        used to be focused on designing websites for desktop browsers; however, 
+                        since the mid-2010s, design for mobile and tablet browsers has become 
+                        ever-increasingly important.
+                    </p>
+                    <a href="#"><b>Learn More</b></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX and UI designers might work on the same product, 
+                        but they have different duties and goals. 
+                        UX designers often create wireframes and testable 
+                        prototypes that form the basis of a website or service's 
+                        user flow, while UI designers finalize products and designs 
+                        that drive user engagement.
+                    </p>
+                    <a href="#"><b>Learn More</b></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design is the look and feel of a mobile application. 
+                        This includes all of the visual elements and interactive 
+                        elements that impact how the app functions. Mobile app design 
+                        combines two concepts—UI and UX. The user interface (UI) encompasses 
+                        the app's look and feel.
+                    </p>
+                    <a href="#"><b>Learn More</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------PORTFOLIO-SECTION----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="IMAGE/work-1.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGE/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGE/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it form play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div> 
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------CONTACT-SECTION------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sangamyadav95k@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9508016412</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/" class="linkedinn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https:youtube.com/" class="youtube"><i class="fa-brands fa-youtube"></i></a> 
+                    </div> 
+                    <a href="IMAGE/my-cv.pdf" download class="btn btn-cv">Download CV</a>  
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-cv">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------FOOTER-SECTION-------------- -->
+    <div class="footer">
+      <p>Copyright &#169; 2023 sangam-dev | Reserved All Rights</p>
+    </div>
+    <script src="SCRIPT.JS"></script>
+</body>
+</html>
